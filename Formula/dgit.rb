@@ -7,7 +7,6 @@ class Dgit < Formula
 
 
   depends_on "go" => :build
-  depends_on "make" => :build
 
   def install
     (buildpath/"go/bin").mkpath
