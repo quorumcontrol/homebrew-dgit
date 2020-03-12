@@ -5,6 +5,12 @@ class Dgit < Formula
   sha256 "3390a7026b432e962078ec0cf8da09479909e00d0c6d41f09789cc216a7ea93b"
   head "https://github.com/quorumcontrol/dgit.git"
 
+  bottle do
+    root_url "https://github.com/quorumcontrol/dgit/releases/download/v0.0.1-alpha"
+    cellar :any_skip_relocation
+    sha256 "29e49ae9d4a2b188e3c88bafc6edeafccfa5fdc23da71d49e361aa459bc5fb5b" => :catalina
+  end
+
   depends_on "go" => :build
   depends_on "make" => :build
 
