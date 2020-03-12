@@ -1,10 +1,13 @@
+require 'yaml'
+
 class Dgit < Formula
+  dgit = YAML.load(File.read('dgit.yml'))
+
   desc "Decentralized Git powered by Tupelo"
   homepage "https://github.com/quorumcontrol/dgit"
-  url "https://api.github.com/repos/quorumcontrol/dgit/tarball/v0.0.2-alpha"
-  sha256 "4ed2c1b42053bc93270cefb4d983d774b9244a7216ce709054a11cd3e2c2fb6a"
+  url dgit['url']
+  sha256 dgit['sha256']
   head "https://github.com/quorumcontrol/dgit.git"
-
 
   depends_on "go" => :build
 
