@@ -2,6 +2,7 @@ class Dgit < Formula
   desc "Decentralized Git powered by Tupelo"
   homepage "https://github.com/quorumcontrol/dgit"
   url "https://github.com/quorumcontrol/dgit/archive/v0.0.1-alpha.tar.gz"
+  version "0.0.1-alpha"
   sha256 "3390a7026b432e962078ec0cf8da09479909e00d0c6d41f09789cc216a7ea93b"
   head "https://github.com/quorumcontrol/dgit.git"
 
