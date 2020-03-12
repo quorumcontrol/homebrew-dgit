@@ -1,7 +1,7 @@
 require 'yaml'
 
 class Dgit < Formula
-  dgit = YAML.load(File.read('./dgit.yml'))
+  dgit = YAML.load(File.read("#{__dir__}/dgit.yml"))
 
   desc "Decentralized Git powered by Tupelo"
   homepage "https://github.com/quorumcontrol/dgit"
