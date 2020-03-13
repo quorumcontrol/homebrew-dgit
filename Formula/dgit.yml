@@ -1,5 +1,5 @@
 url: "https://api.github.com/repos/quorumcontrol/dgit/tarball/v0.0.2-alpha"
-sha256: "e3bade8336dd39c2ff4b517f12e45bc6fad8e88841ea0bd00145fbaa0d7ccf37"
+sha256: "b96e498f85b893550e5af5fb10d082a43c53a39b0062b9faaae7272e5e37d667"
 bottles:
-  root_url: "https://api.github.com/repos/quorumcontrol/dgit/releases/24515646/assets"
+  root_url: "https://api.github.com/repos/quorumcontrol/dgit/releases/24516057/assets"
   sha256:
