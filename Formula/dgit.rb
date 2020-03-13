@@ -12,8 +12,11 @@ class Dgit < Formula
   bottle do
     bottles = dgit["bottles"]
     root_url bottles["root_url"]
-    bottles["sha256"].each do |sha, platform|
-      sha256 sha => platform.to_sym
+    bottle_shas = bottles["sha256"]
+    if bottle_shas && bottle_shas.count > 0
+      bottles["sha256"].each do |sha, platform|
+        sha256 sha => platform.to_sym
+      end
     end
   end
 
