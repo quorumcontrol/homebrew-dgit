@@ -1,7 +1,7 @@
 require "yaml"
 
 class Dgit < Formula
-  dgit = YAML.safe_load(DATA.read)
+  dgit = YAML.safe_load(File.read(__FILE__).split("\n__END__\n", 2)[1])
 
   desc "Decentralized Git powered by Tupelo"
   homepage "https://github.com/quorumcontrol/dgit"
