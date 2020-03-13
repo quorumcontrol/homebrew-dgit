@@ -2,7 +2,7 @@ require "yaml"
 
 class Dgit < Formula
 
-  dgit = YAML.safe_load(File.read(__FILE__).split("\n__END__\n", 2)[1])
+  dgit = YAML.safe_load(File.read("#{__dir__}/dgit.yml"))
 
   desc "Decentralized Git powered by Tupelo"
   homepage "https://github.com/quorumcontrol/dgit"
@@ -37,10 +37,3 @@ class Dgit < Formula
     system "#{bin}/dgit"
   end
 end
-
-__END__
-url: "https://api.github.com/repos/quorumcontrol/dgit/tarball/v0.0.2-alpha"
-sha256: "334dbcaedf6e28f49fad10659285fcfa35c9aa63e7d80455c4e174e3c6cf5f41"
-bottles:
-  root_url: "https://api.github.com/repos/quorumcontrol/dgit/releases/24514083/assets"
-  sha256:
