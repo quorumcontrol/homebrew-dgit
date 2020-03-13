@@ -1,13 +1,21 @@
-require 'yaml'
+require "yaml"
 
 class Dgit < Formula
-  dgit = YAML.load(File.read("#{__dir__}/dgit.yml"))
+  dgit = YAML.safe_load(File.read("#{__dir__}/dgit.yml"))
 
   desc "Decentralized Git powered by Tupelo"
   homepage "https://github.com/quorumcontrol/dgit"
-  url dgit['url']
-  sha256 dgit['sha256']
+  url dgit["url"]
+  sha256 dgit["sha256"]
   head "https://github.com/quorumcontrol/dgit.git"
+
+  bottle do
+    bottles = dgit["bottles"]
+    root_url bottles["root_url"]
+    bottles["sha256"].each do |sha, platform|
+      sha256 sha => platform.to_sym
+    end
+  end
 
   depends_on "go" => :build
 
