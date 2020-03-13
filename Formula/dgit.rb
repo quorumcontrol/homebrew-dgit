@@ -1,8 +1,7 @@
 require "yaml"
 
 class Dgit < Formula
-  dgit = YAML.safe_load(File.read(__FILE__).split("\n__END__\n", 2)[1])
-
+  dgit = YAML.safe_load(File.read(__FILE__).split("\n__END__
   desc "Decentralized Git powered by Tupelo"
   homepage "https://github.com/quorumcontrol/dgit"
   url dgit["url"]
@@ -37,8 +36,12 @@ class Dgit < Formula
   end
 end
 
-__END__
-url: "https://api.github.com/repos/quorumcontrol/dgit/tarball/v0.0.2-alpha"
+__END__url: "https://api.github.com/repos/quorumcontrol/dgit/tarball/v0.0.2-alpha"
 sha256: "3143f1824664c03efbfa11f7c6ea8a9de4d98919a019626feb76c3804be362b7"
 bottles:
   root_url: "https://api.github.com/repos/quorumcontrol/dgit/releases/24511535/assets"
+url: "https://api.github.com/repos/quorumcontrol/dgit/tarball/v0.0.2-alpha"
+sha256: "1e07cd6f57cb0f61db2cb2d7f9d0e2de3dc87d72d7e0b01d6c4cca815b690258"
+bottles:
+  root_url: "https://api.github.com/repos/quorumcontrol/dgit/releases/24512651/assets"
+  sha256:
