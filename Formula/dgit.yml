@@ -3,3 +3,5 @@ sha256: "c4ea259135e82fbe57ed590e73c3713996299f1293adc5e62dcf171aea66d68f"
 bottles:
   root_url: "https://api.github.com/repos/quorumcontrol/dgit/releases/24518903/assets"
   sha256:
+    "13eb1ee9095bf79cecda65c0e2abc5d2c1a0fe58d5cad12c1ffc89dfcc92808a": "catalina"
+    "292fa3429ca80164f4859db9cd81fb410189ca320e2ba37c03098d33b9e219c5": "x86_64_linux"
