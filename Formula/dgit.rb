@@ -40,7 +40,7 @@ end
 
 __END__
 url: "https://api.github.com/repos/quorumcontrol/dgit/tarball/v0.0.2-alpha"
-sha256: "e243578c79ec93df27cf216c37a4fc4967bc49fcf8232756e96e1e3e5530ac29"
+sha256: "334dbcaedf6e28f49fad10659285fcfa35c9aa63e7d80455c4e174e3c6cf5f41"
 bottles:
-  root_url: "https://api.github.com/repos/quorumcontrol/dgit/releases/24513529/assets"
+  root_url: "https://api.github.com/repos/quorumcontrol/dgit/releases/24514083/assets"
   sha256:
