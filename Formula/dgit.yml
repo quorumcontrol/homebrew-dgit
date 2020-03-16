@@ -1,7 +1,5 @@
-url: "https://api.github.com/repos/quorumcontrol/dgit/tarball/v0.0.4-alpha"
-sha256: "8db2e21cc73ed5ee8a53606081b21744aa1c2d9b67990a6ffc2e6ba3fcf37ae8"
+url: "https://api.github.com/repos/quorumcontrol/dgit/tarball/v0.0.5-alpha"
+sha256: "f82c7f28422cc12a22c971f4daafa431fa41c5e875c96643909782e3bffe77ea"
 bottles:
-  root_url: "https://github.com/quorumcontrol/dgit/releases/download/v0.0.4-alpha"
+  root_url: "https://github.com/quorumcontrol/dgit/releases/download/v0.0.5-alpha"
   sha256:
-    "08083b7a3066d012eb3052998f86323f22db538648c382b3d22ff8d3a8bf9523": "catalina"
-    "655bd3fdb44a670f73aec6fb755f0e766d163e258ecedca2d0dd055b64dc67a9": "x86_64_linux"
