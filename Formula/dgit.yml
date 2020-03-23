@@ -1,3 +1,4 @@
+version: "v0.0.9-alpha"
 url: "https://api.github.com/repos/quorumcontrol/dgit/tarball/v0.0.9-alpha"
 sha256: "0e848ff5331619a41794b411a9b0047f83435795fdb21c451562ba90ea75e668"
 bottles:

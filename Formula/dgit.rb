@@ -27,6 +27,8 @@ class Dgit < Formula
     (buildpath/"go/bin").mkpath
     ENV["GOPATH"] = "#{buildpath}/go"
 
+    ENV["VERSION"] = dgit["version"]
+
     system "make", "install"
 
     bin.install "#{ENV["GOPATH"]}/bin/dgit"
