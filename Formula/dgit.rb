@@ -1,8 +1,11 @@
 require "yaml"
 
 class Dgit < Formula
+  @@dgit = YAML.safe_load(File.read("#{__dir__}/dgit.yml"))
 
-  dgit = YAML.safe_load(File.read("#{__dir__}/dgit.yml"))
+  def self.dgit
+    @@dgit
+  end
 
   desc "Decentralized Git powered by Tupelo"
   homepage "https://github.com/quorumcontrol/dgit"
@@ -27,7 +30,7 @@ class Dgit < Formula
     (buildpath/"go/bin").mkpath
     ENV["GOPATH"] = "#{buildpath}/go"
 
-    ENV["VERSION"] = dgit["version"]
+    ENV["VERSION"] = self.class.dgit["version"]
 
     system "make", "install"
 
