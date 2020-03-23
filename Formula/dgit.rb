@@ -13,7 +13,7 @@ class Dgit < Formula
   sha256 dgit["sha256"]
   head "https://github.com/quorumcontrol/dgit.git"
 
-  klass = self.class
+  klass = self
   bottle do
     bottles = klass.dgit["bottles"]
     root_url bottles["root_url"]
