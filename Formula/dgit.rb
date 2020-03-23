@@ -13,8 +13,9 @@ class Dgit < Formula
   sha256 dgit["sha256"]
   head "https://github.com/quorumcontrol/dgit.git"
 
+  klass = self.class
   bottle do
-    bottles = dgit["bottles"]
+    bottles = klass.dgit["bottles"]
     root_url bottles["root_url"]
     bottle_shas = bottles["sha256"]
     if bottle_shas && bottle_shas.count > 0
