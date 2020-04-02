@@ -4,3 +4,5 @@ sha256: ""
 bottles:
   root_url: "https://github.com/quorumcontrol/dgit/releases/download/v0.0.13-alpha"
   sha256:
+    "ef561e1ffce38078dbc06108f66d2b54a49133867751d1565d598d38b6c37c5e": "catalina"
+    "959f8100f881604feb5170663f2f8ea1a383939aa0e0c4dd8295af85c78c7fa6": "x86_64_linux"
