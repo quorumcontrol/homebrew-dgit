@@ -1,8 +1,6 @@
-version: "v0.0.14-alpha"
-url: "https://api.github.com/repos/quorumcontrol/dgit/tarball/v0.0.14-alpha"
+version: "v0.0.15-alpha"
+url: "https://api.github.com/repos/quorumcontrol/dgit/tarball/v0.0.15-alpha"
 sha256: ""
 bottles:
-  root_url: "https://github.com/quorumcontrol/dgit/releases/download/v0.0.14-alpha"
+  root_url: "https://github.com/quorumcontrol/dgit/releases/download/v0.0.15-alpha"
   sha256:
-    "61716e2987142ea2b57cebc6c78103fb29442726afa28505d20abcb3d7fc3432": "catalina"
-    "8366d733e43163d90242e219322d2c2b372e71940791e9151c99b8f83509fa7c": "x86_64_linux"
