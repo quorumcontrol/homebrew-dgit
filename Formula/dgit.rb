@@ -35,11 +35,11 @@ class Dgit < Formula
 
     system "make", "install"
 
-    bin.install "#{ENV["GOPATH"]}/bin/dgit"
+    bin.install "#{ENV["GOPATH"]}/bin/git-dg"
     bin.install "#{ENV["GOPATH"]}/bin/git-remote-dgit"
   end
 
   test do
-    system "#{bin}/dgit"
+    system "#{bin}/git-dg"
   end
 end
