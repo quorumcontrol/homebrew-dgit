@@ -36,7 +36,7 @@ class Dgit < Formula
     system "make", "install"
 
     bin.install "#{ENV["GOPATH"]}/bin/git-dg"
-    bin.install "#{ENV["GOPATH"]}/bin/git-remote-dgit"
+    bin.install "#{ENV["GOPATH"]}/bin/git-remote-dg"
 
     ohai "dgit has been renamed decentragit and is now invoked via git with `git dg [command]`."
   end
